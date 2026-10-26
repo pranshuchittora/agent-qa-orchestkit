@@ -3,7 +3,7 @@
 
 <img src="docs/banner.png" alt="OrchestKit - Stop explaining your stack. Start shipping." width="100%" />
 
-**<!--ork:skills-->110<!--/ork--> skills · <!--ork:agents-->36<!--/ork--> agents · <!--ork:hooks-->163<!--/ork--> hooks**
+**<!--ork:skills-->110<!--/ork--> skills · <!--ork:agents-->36<!--/ork--> agents · <!--ork:hooks-->161<!--/ork--> hooks**
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-≥2.1.277-7C3AED?style=for-the-badge&logo=anthropic)](https://claude.ai/claude-code)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
@@ -121,7 +121,7 @@ OrchestKit gives Claude **persistent knowledge** of production patterns that wor
 |-----------|---------|
 | **<!--ork:skills-->110<!--/ork--> Skills** | RAG patterns, FastAPI, React 19, testing, security, database design, ML integration — loaded on-demand, zero overhead |
 | **<!--ork:agents-->36<!--/ork--> Agents** | Specialized personas (backend-architect, frontend-dev, security-auditor) — route tasks to the right expert |
-| **<!--ork:hooks-->163<!--/ork--> Hooks** | Pre-commit checks, git protection, quality gates, browser safety — ship with confidence |
+| **<!--ork:hooks-->161<!--/ork--> Hooks** | Pre-commit checks, git protection, quality gates, browser safety — ship with confidence |
 
 All available in a single `/plugin install ork`. Skills load on-demand. Hooks work automatically.
 
@@ -199,7 +199,7 @@ OrchestKit is a quality-gate plugin, so its hooks are the product rather than an
 add-on. This section states plainly what they see, where it goes, and how to turn
 each piece off.
 
-**Scope: broad and intentional.** OrchestKit registers <!--ork:hooks-->163<!--/ork--> hooks across <!--ork:events-->32<!--/ork-->
+**Scope: broad and intentional.** OrchestKit registers <!--ork:hooks-->161<!--/ork--> hooks across <!--ork:events-->32<!--/ork-->
 lifecycle events, including `SessionStart`, `UserPromptSubmit`, `PreToolUse`,
 `PostToolUse`, and `Stop`. They are **not** gated to a particular framework or
 project type, because the gates they enforce (secret-write blocking, protected-file
@@ -645,6 +645,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 <!-- AUTO-GENERATED from CHANGELOG.md by scripts/stamp-whats-new.mjs — do not hand-edit between the ork:whats-new markers. -->
 <!-- Regenerated on `npm run build`; CI (`--check`) fails if this is stale. Full history: [CHANGELOG.md](CHANGELOG.md). -->
 
+**[v10.2.1](https://github.com/yonatangross/orchestkit/compare/v10.2.0...v10.2.1)** · 2026-10-25
+
+- **coderabbit:** spend free OSS reviews sparingly, match org settings (#4886)
+
 **[v10.2.0](https://github.com/yonatangross/orchestkit/compare/v10.1.1...v10.2.0)** · 2026-10-25
 
 - **prompt-enhancer:** short stack-aware rewrites with a prompt-cached catalog (#4857)
@@ -682,15 +686,6 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 **[v10.0.0-beta.187](https://github.com/yonatangross/orchestkit/compare/v10.0.0-beta.186...v10.0.0-beta.187)** · 2026-10-22
 
 - **lesson-cards:** lessons are advisory, never ask or deny (#4842)
-
-**[v10.0.0-beta.186](https://github.com/yonatangross/orchestkit/compare/v10.0.0-beta.185...v10.0.0-beta.186)** · 2026-10-21
-
-- **scripts:** export chosen skills as Gemini app skill zips (#4760)
-- **deps:** vitest 4.1.12 in the hook-contract generic-client example (#4843)
-- **deps-dev:** bump happy-dom from 20.14.5 to 21.0.3 in /docs/site (#4812)
-- **deps:** bump the npm_and_yarn group across 5 directories with 1 update (#4840)
-- **deps:** bump the npm-minor-patch group (#4838)
-- …and 2 more (see [CHANGELOG.md](CHANGELOG.md))
 
 _See [CHANGELOG.md](CHANGELOG.md) for the full release history._
 <!--/ork-->
